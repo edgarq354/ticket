@@ -1,7 +1,7 @@
 <template>
   <aside class="z-20 hidden w-64 overflow-y-auto bg-white md:block flex-shrink-0">
     <div class="py-4 text-gray-500">
-      <Link class="ml-6 text-lg font-bold text-purple-800" :href="route('dashboard')">
+      <Link class="ml-6 text-lg font-bold text-green-800" :href="route('dashboard')">
         Ticketera
       </Link>
 
@@ -15,7 +15,7 @@
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
               </svg>
             </template>
-            Dashboard
+            Bienvenido
           </NavLink>
         </li>
 
@@ -28,7 +28,7 @@
                       d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
               </svg>
             </template>
-            Users
+            Usuarios
           </NavLink>
         </li>
 
@@ -41,7 +41,7 @@
                     d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
               </svg>
             </template>
-            About us
+            Reportes
           </NavLink>
         </li>
 
@@ -50,11 +50,16 @@
               class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800"
               aria-haspopup="true">
                 <span class="inline-flex items-center">
-                    <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                    <!--svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round"
                          stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                    </svg-->
+                    <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                      <path d="M21 8a2 2 0 00-2-2h-1V4a1 1 0 00-1-1H7a1 1 0 00-1 1v2H5a2 2 0 00-2 2v2a2 2 0 010 4v2a2 2 0 002 2h1v2a1 1 0 001 1h10a1 1 0 001-1v-2h1a2 2 0 002-2v-2a2 2 0 010-4V8z" />
                     </svg>
-                    <span class="ml-4">Two-level menu</span>
+
+                    <span class="ml-4">Tickets</span>
                 </span>
             <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd"
@@ -65,7 +70,10 @@
             <ul v-show="showingTwoLevelMenu" class="p-2 mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 rounded-md shadow-inner bg-gray-50"
                 aria-label="submenu">
               <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800">
-                <a class="w-full" href="#">Child menu</a>
+                <a class="w-full" href="#">Listar</a>
+              </li>
+              <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800">
+                <a class="w-full" href="#">Atender</a>
               </li>
             </ul>
         </li>
