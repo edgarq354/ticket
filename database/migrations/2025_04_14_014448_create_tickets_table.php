@@ -16,6 +16,13 @@ return new class extends Migration
             $table->string('codigo',10);
             $table->string('estado',10)->default('Espera');
             $table->string('evaluacion',10)->nullable();
+            $table->timestamp('fecha_creacion')->nullable();
+            $table->timestamp('fecha_inicio_atencion')->nullable();
+            $table->timestamp('fecha_fin_atencion')->nullable();
+            $table->foreignId('caja_id')->constrained('cajas')
+            ->onUpdate('cascade')->onDelete('restrict');
+            $table->foreignId('atencion_id')->constrained('atencions')
+            ->onUpdate('cascade')->onDelete('restrict');
             $table->timestamps();
         });
     }

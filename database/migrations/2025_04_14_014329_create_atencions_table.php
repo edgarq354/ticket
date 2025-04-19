@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('atencions', function (Blueprint $table) {
             $table->id();
             $table->string('atencion', 100);
+            $table->string('estado',10)->default('Activo');
             $table->timestamps();
         });
     }
